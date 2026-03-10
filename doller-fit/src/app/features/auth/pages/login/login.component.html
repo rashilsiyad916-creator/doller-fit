@@ -1,0 +1,19 @@
+<div class="login container">
+ <form [formGroup]="loginForm"(ngSumbmit)="onSubmit()">
+        <h2>login</h2>
+
+        <input type="email" formControlName="email" placeholder="email"/>
+        <input type="password" formControlName="password" placeholder="password"/>
+
+       <button type="submit">login</button>
+     
+   
+   
+    <p class="signup-link">
+     Don't have an account ?
+    <a routerlink="/auth/register">sign up</a>
+    <br/><br/>
+    <a routerlink="/admin">Admin login</a>
+   </p>
+ </form>
+</div>

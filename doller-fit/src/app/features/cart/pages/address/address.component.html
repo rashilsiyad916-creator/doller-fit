@@ -1,0 +1,14 @@
+<div class="address-container">
+    <h2>enter delivery address</h2>
+
+    <form (ngSubmit)="saveAddress()">
+     <input type="text" placeholder="Full Name"[(ngModel)]="userAddress.name" name="name" required/>
+     <input type="text" placeholder="Street/House" [(ngModel)]="userAddress.street" name="street" required/>
+     <input type="text" placeholder="City" [(ngModel)]="userAddress.city" name="city" required/>
+     <input type="text" placeholder="State" [(ngModel)]="userAddress.state" name="state" required/>
+     <input type="text" placeholder="Pincode" [(ngModel)]="userAddress.Pincode" name="Pincode" required/>
+     <input type="text" placeholder="Phone Number" [(ngModel)]="userAddress.Phone" name="phone" required/>
+
+     <button type="submit">save & continue</button>
+    </form>
+</div>

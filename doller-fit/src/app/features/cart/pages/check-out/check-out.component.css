@@ -1,0 +1,121 @@
+/* -------- Base Container -------- */
+:host {
+  display: block;
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", sans-serif;
+}
+
+/* -------- Headings -------- */
+h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 15px 0 10px;
+  color: #222;
+}
+
+/* -------- Address Section -------- */
+.delivery-address {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  border-left: 4px solid #000;
+}
+
+.delivery-address p {
+  color: #444;
+  margin: 4px 0;
+}
+
+.phone {
+  font-weight: 500;
+  color: #000;
+}
+
+/* -------- Payment Options -------- */
+label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+  font-weight: 500;
+  cursor: pointer;
+  color: #333;
+}
+
+input[type="radio"] {
+  accent-color: #000; /* black radio buttons */
+  width: 18px;
+  height: 18px;
+}
+
+/* -------- Summary Section -------- */
+.checkout-summary {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border-top: 2px solid #ddd;
+  margin-top: 30px;
+}
+
+.checkout-summary h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.checkout-summary span {
+  font-weight: 600;
+}
+
+/* -------- Pay Now Button -------- */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #111;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 600px) {
+  :host {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 15px;
+  }
+}
